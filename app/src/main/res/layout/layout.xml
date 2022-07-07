@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/t6"
+        android:layout_width="1in"
+        android:layout_height="wrap_content"
+        android:text="FIRST NAME"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        />
+
+    <TextView
+        android:id="@+id/t7"
+        android:layout_width="1in"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t6"
+        android:layout_marginTop="50dp"
+        android:text="LAST NAME"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/t8"
+        android:layout_width="1in"
+        android:layout_height="wrap_content"
+        android:text="AGE"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/t7"
+        />
+    <TextView
+        android:layout_width="1in"
+        android:id="@+id/t9"
+        android:layout_height="wrap_content"
+        android:text="SEX"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/t8"
+        />
+
+    <TextView
+        android:id="@+id/t10"
+        android:layout_width="1in"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t9"
+        android:layout_marginTop="50dp"
+        android:text="DOB"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="1in"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="TextView"
+        android:textFontWeight="@integer/material_motion_duration_long_1"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/t6"
+        android:textAllCaps="true"
+        />
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="1in"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_below="@+id/t1"
+        android:layout_marginTop="50dp"
+        android:textFontWeight="@integer/material_motion_duration_long_1"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/t6"
+        android:textAllCaps="true"
+        />
+
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="1in"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t2"
+        android:textSize="20dp"
+        android:text="TextView"
+        android:layout_marginTop="50dp"
+        android:textFontWeight="@integer/material_motion_duration_medium_1"
+        android:layout_toRightOf="@+id/t6"
+        />
+
+    <TextView
+        android:id="@+id/t4"
+        android:layout_width="1in"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t3"
+
+        android:layout_marginTop="50dp"
+        android:text="TextView"
+        android:textFontWeight="@integer/material_motion_duration_medium_2"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/t6"
+        />
+
+    <TextView
+        android:id="@+id/t5"
+        android:layout_width="1in"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t4"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/t6"
+        android:text="TextView"
+        android:textFontWeight="@integer/material_motion_duration_long_1"
+        android:textSize="20dp" />
+    <TextView
+        android:layout_width="1in"
+        android:layout_height="wrap_content"
+        android:text="PURPOSE"
+        android:textSize="20dp"
+        android:layout_below="@+id/t10"
+        android:layout_marginTop="50dp"
+        android:id="@+id/t11"
+        />
+
+    <TextView
+        android:id="@+id/t12"
+        android:layout_width="1in"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t5"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/t11"
+        android:text="Textview"
+        android:textSize="20dp" />
+</RelativeLayout>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#209281">
+
+    <TextView
+        android:layout_marginTop="2dp"
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GYM APPLICATION"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:background="#99cc00"
+        android:shadowColor="@color/white"/>
+    <TextView
+        android:text="FIRST NAME "
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/e1"
+        android:layout_marginLeft="-127dp"
+        android:layout_marginTop="35dp"
+        android:textSize="17dp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/top"
+        />
+
+    <EditText
+        android:id="@+id/e1"
+        android:layout_width="1.5in"
+        android:layout_height="wrap_content"
+        android:hint="First Name"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/top"
+
+        />
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t1"
+        android:layout_alignLeft="@id/e2"
+        android:layout_marginLeft="-127dp"
+        android:layout_marginTop="56dp"
+        android:text="LAST NAME "
+        android:textSize="17dp"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/e2"
+        android:layout_width="1.5in"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/e1"
+        android:layout_marginTop="29dp"
+        android:hint="Last Name"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t2"
+        android:layout_alignLeft="@+id/e3"
+        android:layout_marginLeft="-104dp"
+        android:layout_marginTop="42dp"
+        android:text="AGE "
+        android:textSize="17dp"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/e3"
+        android:layout_width="1.5in"
+        android:layout_height="wrap_content"
+        android:hint="age"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/e2"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:scrollbars="vertical"
+        android:inputType="number"
+        />
+
+
+    <TextView
+        android:id="@+id/t4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t3"
+        android:layout_alignLeft="@+id/r1"
+        android:layout_marginLeft="-104dp"
+        android:layout_marginTop="62dp"
+        android:text="SEX "
+        android:textSize="17dp"
+        android:textColor="@color/white" />
+
+
+    <RadioGroup
+        android:id="@+id/r1"
+        android:layout_width="1.5in"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/e3"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="26dp"
+        android:checkedButton="@id/r1"
+        >
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="0.5in"
+            android:layout_height="wrap_content"
+            android:text="male" />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="0.7in"
+            android:layout_height="wrap_content"
+            android:text="female" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/t5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t4"
+        android:layout_alignLeft="@+id/e4"
+        android:layout_marginLeft="-130dp"
+        android:layout_marginTop="70dp"
+        android:text="START FROM"
+        android:textSize="17dp"
+        android:textColor="@color/white" />
+    <EditText
+        android:id="@+id/e4"
+        android:layout_width="188dp"
+        
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/r1"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="66dp"
+        android:hint="start from"
+        android:inputType="date"/>
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/r1"
+        android:layout_marginLeft="-59dp"
+        android:layout_marginTop="19dp"
+        android:layout_toRightOf="@+id/e4"
+        android:text="D"
+        android:backgroundTint="@android:color/holo_green_light"/>
+    <CalendarView
+        android:id="@+id/c1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t1"
+        android:background="#f8f19f"
+        android:visibility="visible" />
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:text="submit"
+        android:textColor="#000" />
+    <TextView
+        android:id="@+id/t6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t5"
+        android:layout_marginTop="31dp"
+        android:text="PURPOSE"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:layout_alignLeft="@+id/s1"
+        android:layout_marginLeft="-120dp"
+        />
+    <Spinner
+        android:id="@+id/s1"
+        android:layout_width="1.5in"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/c1"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:autofillHints="weight loss"
+        />
+</RelativeLayout>

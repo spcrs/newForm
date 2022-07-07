@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FinalForm</string>
+   <string-array name="languages">
+        <item>weight loss</item>
+        <item>weight gain</item>
+        <item>fit</item>
+    </string-array>
+</resources>
